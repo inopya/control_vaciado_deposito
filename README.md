@@ -6,7 +6,7 @@ Se incluye una carpeta con las versiones de las librerias utilizadas para evitar
 
       ##### NOTAS DE LA VERSION ##### 
       
-  * Version 1.1 *
+  * Version 1.1 
 
     Cuenta con las funciones de la version 1.0 pero ahora permite modificar la hora del RTC 
     y el MOMENTO de vaciado del deposito usando el pulsador de vaciado MANUAL.
@@ -77,9 +77,8 @@ Se incluye una carpeta con las versiones de las librerias utilizadas para evitar
         una hora que sea mayor de 23 o un minuto mayor a 59.
 
         
- ===================
-  ** Version 1.0 **
- ===================
+  * Version 1.0 (no disponible )
+
     Sistema de vaciado de depposito de aguas residuales a una hora programa.
     El control de tiempo se realiza con un RTC DS3231
     El sistema utiliza tiempos preestablecidos y no pueden ser modificados (en esta vession)
@@ -109,5 +108,3 @@ Se incluye una carpeta con las versiones de las librerias utilizadas para evitar
     durante TIMEOUT segundos.
     Por tanto si se desea encender la luz del LCD para visualizar mejor la pantalla sin provocar 
     el vaciado manual, debemos usar una "pulsacion corta".
-
-*/
