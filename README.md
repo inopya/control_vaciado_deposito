@@ -1,4 +1,4 @@
-# control de vaciado para deposito
+# CONTROL DE VACIADO PARA DEPÓSITO
 
 * *Control de vaciado para deposito de aguas residuales*
 
