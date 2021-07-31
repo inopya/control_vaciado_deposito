@@ -121,3 +121,19 @@ el vaciado manual, debemos usar una "pulsacion corta".
 *Sirva asi mismo como ejemplo de aplicacion practica de la libreria para control de eventos en pulsadores:*
 
 *https://github.com/inopya/inopya_ClickButton_v2_pullup*
+
+
+    USO DEL PULSADOR (segun el estado del programa en que nos encontremos).
+    ** MQ_WAIT:
+      - 1 pulsacion simple:   enciende la luz del LCD
+      - 1 pulsacion larga:    inicia el proceso de vaciado
+      - 1 pulsacion doble:    nos lleva al menu de seleccion para modificar RTC/TIMER
+                              (pulsacione simples en ese menu selecciona ciclicamente una u otra opcion)
+                              (unaboble pulscion selecciona el modo que este visualizado en pantalla)
+     ** MQ_PROG_MODE: 
+      - 1 pulsacion simple:   incrementan el digito seleccionado
+      - 1 pulsacion doble:    mueven el cursor al siguiente digito
+      - 1 pulsacion larga:    acepta os cambios y sale de edicion
+
+    ** MQ_EMPTIYING:
+      - 1 pulsacion larga:   interrumpe el proceso de vaciado
