@@ -18,7 +18,8 @@
               si no se desea esperar al proximo ciclo diario.
 
     Para acceder al modo PROGRAMACION  debemos realizad una "doble pulsacion" 
-    y se mostrara en pantalla el mensaje: **"CLICK TO SELECT  (Timer/Clock)"**
+    y se mostrara en pantalla el mensaje: 
+      - **"CLICK TO SELECT  (Timer/Clock)"**
           Nota: 
               El modo programacion tiene un timeout de 20 segundos, es decir si pasan 20 segundos sin que modifiquemos nada
               el programa vuelve al modo normal de funcionamiento y se anula cualquier cambio parcial.
