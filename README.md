@@ -18,19 +18,18 @@
               si no se desea esperar al proximo ciclo diario.
 
     Para acceder al modo PROGRAMACION  debemos realizad una "doble pulsacion" 
-    y se mostrara en pantalla el mensaje: 
-                 "CLICK TO SELECT  (Timer/Clock)" 
+    y se mostrara en pantalla el mensaje: **"CLICK TO SELECT  (Timer/Clock)"**
           Nota: 
               El modo programacion tiene un timeout de 20 segundos, es decir si pasan 20 segundos sin que modifiquemos nada
               el programa vuelve al modo normal de funcionamiento y se anula cualquier cambio parcial.
               Por supuesto, con cada pulsacion el temporizador de control de timeout se resetea permitiendo que
               el proceso de programacion dure todo el tiempo que necesitemos.
     
-    Una vez en modo programacion, las "pulsaciones cortas" alternan los mensajes:
-      - "PROG >> TIMER  (Empty Moment) "
-      - "PROG >> CLOCK    (Modify RTC) "
+    Una vez en modo programacion, las *"pulsaciones cortas"* alternan los mensajes:
+      - **"PROG >> TIMER  (Empty Moment) "**
+      - **"PROG >> CLOCK    (Modify RTC) "**
       
-     Mientras se visualiza cualquiera de ellos, una "doble pulsacion" selecciona dicho modo
+     Mientras se visualiza cualquiera de ellos, una *"doble pulsacion"* selecciona dicho modo
      y nos lleva hasta el menu de modificacion de valores.
      - En el caso del RTC podemos modificar unicamente hora, minutos y segundos
        No se podrá corregir la fecha. (Pendiente de implementar en futuras versiones)
@@ -39,7 +38,7 @@
        La duracion del proceso de vaciado es de 20 minutos. Establecido en el codigo 
        y no se puede modificar. (Pendiente de implementar en futuras versiones)
 
-     Una vez que estamos en condicion de modificar valores, deberemos hacerlo 'digito a digito':
+     Una vez que estamos en condicion de modificar valores, deberemos hacerlo *'digito a digito'*:
      El digito que esta activo para ser modificado parpadea con una cadenca de 0.6 segundos
      Inicialmente es el digito situado a la izquierda de la pantalla.
      "Pulsaciones simples" lo incrementan y una vez alcanzado su maximo valor posible, 
@@ -89,7 +88,7 @@
        para el vaciado completo del deposito.
    
      - Se dispone tambien de un pulsador para vaciado MANUAL.
-       Para activar el proceso de vaciado manualmente debemos realizar una "pulsacion larga" (entre 1 y 2 segundos)
+       Para activar el proceso de vaciado manualmente debemos realizar una *"pulsacion larga"* (entre 1 y 2 segundos)
        Ello desencadena el proceso de vaciado que se prolongará durante los 20 mitutos preestablecios por el sistema
        Si se desea interrumpir el proceso de vaciado será posible hacerlo mediante una nueva "pulsacion larga".
 
