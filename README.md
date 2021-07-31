@@ -4,12 +4,9 @@ Control de vaciado para deposito de aguas residuales
 Se incluye una carpeta con las versiones de las librerias utilizadas para evitar problemas al compilar.
 
 
-/*
       ##### NOTAS DE LA VERSION ##### 
       
- ===================
-  ** Version 1.1 **
- ===================
+  * Version 1.1 *
 
     Cuenta con las funciones de la version 1.0 pero ahora permite modificar la hora del RTC 
     y el MOMENTO de vaciado del deposito usando el pulsador de vaciado MANUAL.
