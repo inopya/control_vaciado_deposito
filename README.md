@@ -5,6 +5,9 @@
 (Se incluye una carpeta con las versiones de las librerias utilizadas para evitar problemas al compilar)
 
 
+![](./control_vaciado_pq.png)
+
+
       ##### NOTAS DE LA VERSION ##### 
       
   * Version 1.1 
