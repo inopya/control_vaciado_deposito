@@ -1,7 +1,10 @@
 # control de vaciado para deposito
-Control de vaciado para deposito de aguas residuales
 
-Se incluye una carpeta con las versiones de las librerias utilizadas para evitar problemas al compilar.
+* *Control de vaciado para deposito de aguas residuales*
+
+(Se incluye una carpeta con las versiones de las librerias utilizadas para evitar problemas al compilar)
+
+
 
 
       ##### NOTAS DE LA VERSION ##### 
