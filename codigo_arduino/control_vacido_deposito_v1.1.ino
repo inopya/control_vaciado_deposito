@@ -232,15 +232,12 @@
 enum estados_maquina
 {
   MQ_START            =   0,    //  inicio tras recibir corriente  
-  MQ_WAITING          =  20,    //  inicio de vaciado, abriendo
-  MQ_BEGIN_TASK       =  21,    //  inicio de vaciado, abriendo
-  MQ_OPENNIG          =  22,    //  inicio de vaciado, abriendo
+  MQ_WAITING          =  20,    //  estado de espera hasta siguiente ciclo de vaciado
+  MQ_BEGIN_TASK       =  21,    //  condiciones para inicio de vaciado, desencadenando evento
+  MQ_OPENNIG          =  22,    //  proceso de vaciado, abriendo valvula
   MQ_EMPTYING         =  23,    //  vaciando deposito
-  MQ_CLOSING          =  24,    //  fin de vaciado, cerrando
-
-  MQ_PROG_MODE        =  30,
-  MQ_PROG_TIMER       =  31,
-  MQ_PROG_CLOCK       =  32, 
+  MQ_CLOSING          =  24,    //  fin de vaciado, cerrando valvula
+  MQ_PROG_MODE        =  30,    //  programar RTC / TIMER
   MQ_TEST ,                     //  modo test, sin uso
 };
 
@@ -302,8 +299,8 @@ uint8_t HORA_APERTURA = 20;             // Hora de inicio de la operacion de vac
 uint8_t MINUTO_APERTURA = 0;            // Minuto de inicio de la operacion de vaciado
 uint8_t SEGUNDO_APERTURA = 0;           // segundo de inicio de la operacion de vaciado
 
-uint8_t TIME_OPEN_CLOSE = 15;           // segundos para operaciones de apertura y cierre (40 segundos)
-uint16_t TIME_TO_EMPTY = 35;         // segundos para vaciado del deposito (20*60 = 20 minutos)
+uint8_t TIME_OPEN_CLOSE = 40;           // segundos para operaciones de apertura y cierre (40 segundos)
+uint16_t TIME_TO_EMPTY = 20*60;         // segundos para vaciado del deposito (20*60 = 20 minutos)
 
 uint8_t  listaHora[6] = {0,0,0,0,0,0};  // almacena la hora del sistema durante las modificaciones del RTC
 uint8_t  listaVaciado[4] = {0,0,2,0};   // almacena la hora del vaciado programado durante su modificacion      
