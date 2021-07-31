@@ -277,8 +277,8 @@ uint8_t HORA_APERTURA = 20;             // Hora de inicio de la operacion de vac
 uint8_t MINUTO_APERTURA = 0;            // Minuto de inicio de la operacion de vaciado
 uint8_t SEGUNDO_APERTURA = 0;           // segundo de inicio de la operacion de vaciado
 
-uint8_t TIME_OPEN_CLOSE = 10;           // segundos para operaciones de apertura y cierre (40 segundos)
-uint16_t TIME_TO_EMPTY = 30;         // segundos para vaciado del deposito (20*60 = 20 minutos)
+uint8_t TIME_OPEN_CLOSE = 40;           // segundos para operaciones de apertura y cierre (40 segundos)
+uint16_t TIME_TO_EMPTY = 20*60;         // segundos para vaciado del deposito (20*60 = 20 minutos)
 
 uint8_t  listaHora[6] = {0,0,0,0,0,0};  // almacena la hora del sistema durante las modificaciones del RTC
 uint8_t  listaVaciado[4] = {0,0,2,0};   // almacena la hora del vaciado programado durante su modificacion      
