@@ -116,7 +116,7 @@ el vaciado manual, debemos usar una "pulsacion corta".
 
 **NOTA ACLARATORIA:**
 
-*Es verdad quese se podia haber facilitado el uso de los modos de programacion de RTC y TIMER añadiendo mas pulsadores, cosa que no hubiese sido un problema dado que hay suficiente disponibilidad de Entradas/Salidas, pero este montaje reponde y resuleve a una duda planteada sobre un caso real en el que las condiciones y distribucion fisica son las mostradas en el esquema.*
+*Es verdad quese se podia haber facilitado el uso de los modos de programacion de RTC y TIMER añadiendo mas pulsadores, cosa que no hubiese sido un problema dado que hay suficiente disponibilidad de Entradas/Salidas, pero este montaje reponde y resuleve una duda planteada sobre un caso real en el que las condiciones y distribucion fisica son las mostradas en el esquema.*
 
 *Sirva asi mismo como ejemplo de aplicacion practica de la libreria para control de eventos en pulsadores:*
 
