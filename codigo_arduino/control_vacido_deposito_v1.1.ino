@@ -318,7 +318,7 @@ DateTime date;                          // almacena fecha y hora actuales para t
 RTC_DS3231 rtc;                                 // creacciond de un objeto RTC
 LiquidCrystal_I2C lcd(0x27,16,2);               // creacciond de un objeto LCD, (direccion, columnas, filas)
 Temporizador_inopya relojControlParpadeo;       // crear temporizadores no bloqueantes
-ClickButton mi_pulsador_1(PIN_PULSADOR, true);  // true=PULLUP, false= PULLDOWN
+ClickButton mi_pulsador_1(PIN_PULSADOR, false); // true=PULLUP, false= PULLDOWN
 
 
  
