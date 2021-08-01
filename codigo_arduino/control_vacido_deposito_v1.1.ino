@@ -219,7 +219,7 @@
 
 #define ON                   LOW      // Reles se activan a nive bajo
 #define OFF                 HIGH 
-#define TIMEOUT               8
+#define TIMEOUT               20      // TimeOut usado para la luz del LCD y para cancelacion de edicion
 
    
 
