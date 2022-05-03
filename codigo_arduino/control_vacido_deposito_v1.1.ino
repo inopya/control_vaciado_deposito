@@ -63,7 +63,7 @@
      (Se ha buscado la manera mas comoda de hacer las cosas partiendo de que solo disponemos de un pulsador)
      
      Para aceptar el valor y cambiar de digito debemos hacer una "doble pulsacion".
-     Eel cursor se posicionara en el siguiente digito y comenzara a parpadear de nuevo.
+     El cursor se posicionara en el siguiente digito y comenzara a parpadear de nuevo.
      Asi sucesivametne "doble click" nos ira haciendo avanzar por la cifras para modificarlas 
      o simplemente saltarlas si un determinado digito no necesita ser odificado.
      
@@ -209,13 +209,12 @@
 #define PIN_RELE_OPEN         12      // Rele para apertura de valvula.
 #define PIN_RELE_CLOSE        11      // Rele para cierre de valvula.
 #define PIN_PULSADOR           2      // permite actuar en modo manual y programar
+#define LED_ONBOARD           13      // LED integrado en las placas tipo "Arduino".
 
 
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 //        SECCION DE DEFINICION DE CONSTANTES DEL PROGRAMA
 //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
-
-#define LED_ONBOARD           13      // LED integrado en las placas tipo "Arduino".
 
 #define ON                   LOW      // Reles se activan a nive bajo
 #define OFF                 HIGH 
@@ -405,12 +404,13 @@ void loop(void)
   uint8_t pulsacion = mi_pulsador_1.Read();
 
   if( pulsacion>0 ){
+    segundos_anterior=101;   //para provocar el refresco inmediato del LCD	  
     lcd.backlight();
     FLAG_timeout_running = true;
     timer_luz_lcd = date.unixtime() + TIMEOUT; 
   }
 
-  if( date.unixtime()>timer_luz_lcd && FLAG_timeout_running ){
+  if( FLAG_timeout_running && date.unixtime()>timer_luz_lcd ){
     FLAG_timeout_running = false;
     lcd.noBacklight();
   } 
@@ -514,7 +514,7 @@ void loop(void)
     }
   }
 
-  /* CONTROL DE PARPADEO DURANTE LS OPERACIONES DE APERTURA Y CIERRE DE LA VALVULA */
+  /* CONTROL DE PARPADEO DURANTE LAS OPERACIONES DE APERTURA Y CIERRE DE LA VALVULA */
   // De este modo podemos controlar la frecuencia del parpadeo, pero se puede suprimir 
   // si se desea y usarlo desde la maquina de estados, en cuyo caso seria un parpadeo lento cada dos segundos. 
   if( estado_actual==MQ_OPENNIG || estado_actual==MQ_CLOSING ){
